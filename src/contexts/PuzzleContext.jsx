@@ -11,25 +11,25 @@ export const PuzzleProvider = ({ children }) => {
   const [templateModalOpen, setTemplateModalOpen] = useState(false);
   const [selectedImagePreview, setSelectedImagePreview] = useState(null);
 
-  // Dostępne obrazy
+  // Dostepne obrazy
   const availableImages = [
     { id: 1, path: 'src/assets/patterns/img_1.jpg', name: 'Obrazek 1' },
     { id: 2, path: 'src/assets/patterns/img_2.jpg', name: 'Obrazek 2' },
     { id: 3, path: 'src/assets/patterns/img_3.jpg', name: 'Obrazek 3' },
   ];
 
-  // Dostępne szablony puzzli (SVG)
+  // Dostepne szablony puzzli (SVG)
   const availableTemplates = [
-    { id: 1, path: 'src/assets/templates/7x7.svg', name: '7×7 (49 elementów)' },
-    { id: 2, path: 'src/assets/templates/jigsaw7x7.svg', name: 'Jigsaw 7×7 (49 elementów)' },
-    { id: 3, path: 'src/assets/templates/jigsaw10x10.svg', name: 'Jigsaw 10×10 (100 elementów)' },
-    { id: 4, path: 'src/assets/templates/jigsaw10x14.svg', name: 'Jigsaw 10×14 (140 elementów)' },
-    { id: 5, path: 'src/assets/templates/jigsaw15x21.svg', name: 'Jigsaw 15×21 (315 elementów)' },
-    { id: 6, path: 'src/assets/templates/jigsaw20x20.svg', name: 'Jigsaw 20×20 (400 elementów)' },
-    { id: 7, path: 'src/assets/templates/jigsaw20x28.svg', name: 'Jigsaw 20×28 (560 elementów)' },
+    { id: 1, path: 'src/assets/templates/7x7.svg', name: '7×7 (49 elementow)' },
+    { id: 2, path: 'src/assets/templates/jigsaw7x7.svg', name: 'Jigsaw 7×7 (49 elementow)' },
+    { id: 3, path: 'src/assets/templates/jigsaw10x10.svg', name: 'Jigsaw 10×10 (100 elementow)' },
+    { id: 4, path: 'src/assets/templates/jigsaw10x14.svg', name: 'Jigsaw 10×14 (140 elementow)' },
+    { id: 5, path: 'src/assets/templates/jigsaw15x21.svg', name: 'Jigsaw 15×21 (315 elementow)' },
+    { id: 6, path: 'src/assets/templates/jigsaw20x20.svg', name: 'Jigsaw 20×20 (400 elementow)' },
+    { id: 7, path: 'src/assets/templates/jigsaw20x28.svg', name: 'Jigsaw 20×28 (560 elementow)' },
   ];
 
-  // Otwórz modal z podglądem obrazu
+  // Otworz modal z podgladem obrazu
   const openImagePreview = (image) => {
     setSelectedImagePreview(image);
     setImageModalOpen(true);
@@ -39,7 +39,7 @@ export const PuzzleProvider = ({ children }) => {
   const confirmImageSelection = () => {
     setSelectedImage(selectedImagePreview);
     setImageModalOpen(false);
-    setTemplateModalOpen(true); // Po wyborze obrazu otwórz modal wyboru szablonu
+    setTemplateModalOpen(true); // Po wyborze obrazu otworz modal wyboru szablonu
   };
 
   // Wybierz szablon i zamknij modal

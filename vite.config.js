@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    sourcemap: true, // Włącz mapy źródeł
+    sourcemap: true, // Wlacz mapy źrodel
   },
   server: {
-    port: 5174, // Upewnij się, że port jest zgodny z konfiguracją debugowania
+    port: 5174, // Upewnij sie, ze port jest zgodny z konfiguracja debugowania
   },
 });
